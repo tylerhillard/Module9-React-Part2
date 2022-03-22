@@ -4,6 +4,7 @@ import './index.css'
 
 
 
+
 const App = () => {
   const [count, setCount] = useState(0)
   const [dark, setDark] = useState(false)
@@ -34,15 +35,19 @@ const App = () => {
     setDark(!dark)
   }
 
+
+
   const blockStyles ={
     background: dark ? 'black':'white',
-    width:'120px',
-    height:'120px',
+    width:'200px',
+    height:'200px',
     position:'absolute',
-    top:'20%',
-    left:'5%',
+    top:'28%',
+    left:'8%',
     transform:'translate(-50%,-50%)'
   }
+
+  
 
   return (
     <div className='App'>
@@ -52,6 +57,11 @@ const App = () => {
       <button onClick={double}>Double It</button>
       <button onClick={divide}>Split It</button>
       <button onClick={toggleDark}>Toggle Dark</button>
+      <br/>
+      <br/>
+      <a href="https://www.linkedin.com/in/tyler-hillard-708a9a162/" target="_blank">
+      <button> Connect With Me </button>
+      </a>
       <br/>
 
       <span>Dark mode is {dark? 'ON':'OFF'}</span>
